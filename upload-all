@@ -1,0 +1,5 @@
+#! /bin/sh
+# assumes luatool.py is in your path
+for i in src/*.lua; do
+	luatool/luatool.py --port /dev/ttyUSB0 --src $i --dest $i --baud 9600
+done

@@ -1,0 +1,4 @@
+#! /bin/sh
+# assumes luatool.py is in your path
+LUA_TOOL=luatool/luatool/luatool.py
+$LUA_TOOL --port /dev/ttyUSB0 --src "$1" --dest "$1" --baud 9600

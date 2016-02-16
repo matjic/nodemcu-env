@@ -1,0 +1,21 @@
+#!/bin/bash
+set -e
+
+# sets up a basic development environment for NodeMCU
+
+# may need to be replaced depending on OS but is reasonable
+# for Mac/Ubuntu
+pip install pySerial
+# get flashing tool
+git clone https://github.com/themadinventor/esptool.git esptool
+# get lua tool
+git clone https://github.com/4refr0nt/luatool.git luatool
+
+
+echo "To flash your NodeMCU:"
+echo "----------------------------------------"
+echo "Connect your NodeMCU in bootloader mode"
+echo "--connect via usb"
+echo "--hold flash button"
+echo "--tap reset button"
+echo "Then run sudo ./flash"
