@@ -13,4 +13,4 @@ echo "--tap reset button"
 echo "Press ENTER to continue..."
 read 
 
-$ESP_TOOL write_flash 0x00000 firmware/nodemcu-master-11-modules-2016-02-15-21-50-15-float.bin
+$ESP_TOOL write_flash 0x00000 firmware/nodemcu-master-10-modules-2016-02-17-03-37-37-float.bin
