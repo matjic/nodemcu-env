@@ -1,12 +1,12 @@
-print('init.lua ver 1.2')
+-- print('init.lua ver 1.2')
 wifi.setmode(wifi.STATION)
-print('set mode=STATION (mode='..wifi.getmode()..')')
-print('MAC: ',wifi.sta.getmac())
-print('chip: ',node.chipid())
-print('heap: ',node.heap())
+-- print('set mode=STATION (mode='..wifi.getmode()..')')
+-- print('MAC: ',wifi.sta.getmac())
+-- print('chip: ',node.chipid())
+-- print('heap: ',node.heap())
 
 -- wifi config start
-wifi.sta.config("dd-wrt","wifipass")
+wifi.sta.config("Mathew's iPhone","esp8266wifipass")
 wifi.sta.autoconnect(1)
 -- wifi config end
 

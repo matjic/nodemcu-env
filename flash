@@ -3,14 +3,15 @@
 set -e
 
 ESP_TOOL=esptool/esptool.py
+firmware_bin=nodemcu-dev-11-modules-2016-05-06-21-41-09-float.bin
 
-echo "To flash your NodeMCU:"
-echo "----------------------------------------"
-echo "Connect your NodeMCU in bootloader mode"
-echo "--connect via usb"
-echo "--hold flash button"
-echo "--tap reset button"
-echo "Press ENTER to continue..."
-read 
+# echo "To flash your NodeMCU:"
+# echo "----------------------------------------"
+# echo "Connect your NodeMCU in bootloader mode"
+# echo "--connect via usb"
+# echo "--hold flash button"
+# echo "--tap reset button"
+# echo "Press ENTER to continue..."
+# read 
 
-$ESP_TOOL write_flash 0x00000 firmware/nodemcu-master-10-modules-2016-02-17-03-37-37-float.bin
+${ESP_TOOL} write_flash 0x00000 firmware/${firmware_bin}
